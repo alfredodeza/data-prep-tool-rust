@@ -1,0 +1,41 @@
+{
+  "delimiter": ",",
+  "has_header": true,
+  "columns": [
+    {
+      "name": "",
+      "type": "integer",
+      "nullable": false
+    },
+    {
+      "name": "name",
+      "type": "text",
+      "nullable": false
+    },
+    {
+      "name": "grape",
+      "type": "text",
+      "nullable": true
+    },
+    {
+      "name": "region",
+      "type": "text",
+      "nullable": true
+    },
+    {
+      "name": "variety",
+      "type": "text",
+      "nullable": true
+    },
+    {
+      "name": "rating",
+      "type": "integer",
+      "nullable": false
+    },
+    {
+      "name": "notes",
+      "type": "integer",
+      "nullable": true
+    }
+  ]
+}

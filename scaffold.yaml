@@ -1,0 +1,36 @@
+# csvsum transform spec
+#
+# `steps` is a list of transformations applied in order, top to bottom.
+# Every step is a map with a `step:` field naming its type, plus that type's
+# own fields. Available step types:
+#
+#   - step: drop_columns
+#     columns: [grape]                 # drop one or more columns
+#
+#   - step: select_columns
+#     columns: [name, region, rating]  # keep only these columns, in this order
+#
+#   - step: rename_column
+#     from: rating
+#     to: score
+#
+#   - step: cast
+#     column: rating
+#     to: integer                      # one of: integer, float, string, boolean
+#
+#   - step: filter
+#     column: rating
+#     op: gte                          # one of: gt, gte, lt, lte, eq, neq
+#     value: 90                        # a number or a quoted string
+#
+description: "Example: drop grape, cast rating to integer, keep 90 and above"
+steps:
+  - step: drop_columns
+    columns: [grape]
+  - step: cast
+    column: rating
+    to: integer
+  - step: filter
+    column: rating
+    op: gte
+    value: 97

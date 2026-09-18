@@ -1,0 +1,11 @@
+id,name,age,city,signup_date,score
+1,Alice,34,Seattle,2023-01-05,88.5
+2,Bob,29,Austin,2023-01-07,92.1
+3,Carol,,Seattle,2023-02-11,79.0
+4,Dave,41,Boston,2023-02-19,
+5,Eve,25,Austin,2023-03-01,95.4
+6,Frank,38,Seattle,2023-03-15,67.2
+7,Grace,29,Boston,2023-04-02,84.9
+8,Heidi,,Austin,2023-04-20,90.0
+9,Ivan,52,Seattle,2023-05-09,73.3
+10,Judy,31,Boston,2023-05-30,88.0
